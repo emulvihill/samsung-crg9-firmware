@@ -1,0 +1,10 @@
+# Vendor firmware, derived binaries, and local toolchains stay local.
+/firmware
+/analysis/*
+!/analysis/PATCH-DESIGN.md
+/tools/
+.worktrees/
+__pycache__/
+*.pyc
+.venv/
+/dist/
