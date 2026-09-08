@@ -1,7 +1,11 @@
 # Samsung CRG9 DP2 patcher
 
-Experimental patcher for Samsung's **m-RG949CCAA-1007.2**. It produces a local
-modified candidate identified as **1007.3**, and adds DDC/CI input value
+Experimental patcher for Samsung's **m-RG949CCAA-1007.2**. 
+
+The CRG9 (CCAA) monitor which I purchased lacks the ability to switch to DisplayPort 2 via DDC, although HDMI and DP1 work fine. This is due to a missing branch in the switching function's mappings from port id -> output.
+
+It produces a local
+modified firmware file identified as **1007.3**, and adds DDC/CI input value
 `0x0A` for DisplayPort 2, preserving `0x09` for DP1, `0x06` for HDMI, and the
 existing behavior of other values. The 1007.3 candidate has installed
 successfully on one LC49RG90SSNXZA monitor, and DDC/CI switching to DP2 was
